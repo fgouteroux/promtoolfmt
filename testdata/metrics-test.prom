@@ -1,0 +1,12 @@
+# HELP test_metric_info A metric with a constant '1' value labeled by testlabel.
+# TYPE test_metric_info gauge
+test_metric_info{testlabel="testvalue1"} 1
+test_metric_info{testlabel="testvalue2"} 1
+# HELP test_metric_duplicate_info A metric with a constant '1' value labeled by testlabel.
+# TYPE test_metric_duplicate_info gauge
+test_metric_duplicate_info{testlabel="testvalue1"} 1
+test_metric_duplicate_info{testlabel="testvalue1"} 1
+# HELP test_metric_with_spaces_info A metric with a constant '1' value labeled by testlabel.
+# TYPE test_metric_with_spaces_info gauge
+test_metric_with_spaces_info{ testlabel="testvalue1", testanotherlabel="testanothervalue1" } 1
+test_metric_with_spaces_info{ testlabel="testvalue2", testanotherlabel="testanothervalue2" } 1

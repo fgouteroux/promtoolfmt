@@ -1,0 +1,2 @@
+test_metric_info{testlabel="testvalue1"} 1
+test_metric_info{testlabel="testvalue2"} 1
