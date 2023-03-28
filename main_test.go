@@ -18,7 +18,7 @@ func TestCheckMetricsSilent(t *testing.T) {
 	f, err := os.Open("testdata/metrics-test.prom")
 	require.NoError(t, err)
 	defer f.Close()
-	
+
 	data, err := io.ReadAll(f)
 	require.NoError(t, err)
 
@@ -37,7 +37,7 @@ func TestCheckMetricsNoSilent(t *testing.T) {
 	f, err := os.Open("testdata/metrics-test.prom")
 	require.NoError(t, err)
 	defer f.Close()
-	
+
 	data, err := io.ReadAll(f)
 	require.NoError(t, err)
 
@@ -57,7 +57,7 @@ func TestCheckMetricInvalidFloatValue(t *testing.T) {
 	f, err := os.Open("testdata/invalid-metrics-float-value.prom")
 	require.NoError(t, err)
 	defer f.Close()
-	
+
 	data, err := io.ReadAll(f)
 	require.NoError(t, err)
 
@@ -75,7 +75,7 @@ func TestCheckMetricInvalidHelpText(t *testing.T) {
 	f, err := os.Open("testdata/invalid-metrics-no-help-text.prom")
 	require.NoError(t, err)
 	defer f.Close()
-	
+
 	data, err := io.ReadAll(f)
 	require.NoError(t, err)
 
